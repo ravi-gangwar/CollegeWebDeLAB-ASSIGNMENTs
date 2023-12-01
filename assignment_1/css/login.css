@@ -93,7 +93,7 @@ ul li {
 #login-box{
     height: 95%;
     width: 95%;
-    box-shadow: azure 2px 2px 10px 20px;
+    box-shadow: rgb(60, 62, 62) 2px 2px 20px 5px;
 }
 
 input{
