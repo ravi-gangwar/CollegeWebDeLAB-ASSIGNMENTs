@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/registration.css">
+    <title>Assignment 1</title>
+</head>
+<body>
+    <header>
+        <div id="main-header">
+            <div id="logo">LOGO</div>
+            <h1 id="webName">WebSite Name</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li> <a href="./login.html">Login</a></li>
+                <li><a href="./registration.html">Registration</a></li>
+                <li><a href="./catalouge.html">Catalouge</a></li>
+                <li><a href="./cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="body">
+        <style>
+        
+            form {
+              background-color: #fff;
+              height:90%;
+              width: 50%;
+              padding: 20px;
+              border-radius: 8px;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            input,
+            select,
+            textarea {
+              width: 100%;
+              padding: 8px;
+              margin-bottom: 10px;
+              box-sizing: border-box;
+              resize: none;
+            }
+        
+            input[type="radio"],
+            input[type="checkbox"] {
+              margin-right: 5px;
+            }
+            .langDiv{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .gender{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+        
+            button {
+              background-color: #4caf50;
+              color: #fff;
+              padding: 10px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+            }
+        
+            button:hover {
+              background-color: #45a049;
+            }
+          </style>
+        <div id="branches">
+            <div>CSE</div>
+            <div>ECE</div>
+            <div>EE</div>
+            <div>CIVIL</div>
+        </div>
+        <div id="dis">
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            
+                <label for="email">E-mail ID:</label>
+                <input type="text" id="email" name="email" required>
+            
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+              <div class="gender">
+                <label>Sex:</label>
+                <label><input type="radio" name="sex" value="male"> Male</label>
+                <label><input type="radio" name="sex" value="female"> Female</label>
+              </div>
+            
+              <label for="dob">Date of Birth:</label>
+              <select class="days" name="day" id="day">
+               
+              </select>
+              <select name="month" id="month">
+                <!-- Options for months -->
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+              <select class="years" name="year" id="year">
+               
+              </select>
+              
+              <div class="langDiv">
+                <label>Languages known:</label>
+                <label><input type="checkbox" name="languages[]" value="english"> English</label>
+                <label><input type="checkbox" name="languages[]" value="telugu"> Telugu</label>
+                <label><input type="checkbox" name="languages[]" value="hindi"> Hindi</label>
+                <label><input type="checkbox" name="languages[]" value="tamil"> Tamil</label>
+              </div>
+            
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4"></textarea>
+            
+                <button type="submit">Register</button>
+              </form>
+        </div>
+    </div>
+    <script src="../script/registrationPage.js"></script>
+
+</body>
+</html>
