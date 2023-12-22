@@ -91,12 +91,21 @@ ul li {
 }
 .books{
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
-    width: 1;
     margin-bottom:5px;
+    align-items: center;
+    background-color: grey;
     border-bottom: 1px solid black;
 }
 .cataDis img {
     height: 150px;
+}
+.cartAmount{
+    position: absolute;
+    bottom: 0;
+}
+button{
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
 }
