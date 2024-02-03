@@ -24,7 +24,6 @@
     </header>
     <div id="body">
         <style>
-        
             form {
               background-color: #fff;
               height:90%;
@@ -78,7 +77,7 @@
             <div>CIVIL</div>
         </div>
         <div id="dis">
-            <form action="#" method="post">
+            <form action="#" id="myForm" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
             
@@ -130,11 +129,17 @@
                 <label for="address">Address:</label>
                 <textarea id="address" name="address" rows="4"></textarea>
             
-                <button type="submit">Register</button>
+                <button type="submit" >Register</button>
               </form>
         </div>
     </div>
     <script src="../script/registrationPage.js"></script>
+    <script>
+      const form = document.getElementById("myForm");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+      });
+    </script>
 
 </body>
 </html>
